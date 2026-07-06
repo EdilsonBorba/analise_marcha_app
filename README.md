@@ -74,6 +74,50 @@ de `Resultados_RTMLib/`. Análises anteriores ficam acessíveis na aba **Resulta
 
 ---
 
+## O que é salvo
+
+Cada análise grava os resultados na **pasta de saída** que você escolheu, dentro de uma
+subpasta **`Resultados_RTMLib/`**. Todas as planilhas trazem uma coluna `Paciente` para
+facilitar juntar vários sujeitos. Os arquivos por trial recebem o prefixo do nome
+(`{participante}_{video}`).
+
+### Estrutura das pastas
+
+```
+<pasta de saída>/Resultados_RTMLib/
+├── Resumo_Geral.xlsx            (acumulativo — todos os trials juntos)
+├── Marcadores/
+├── Angulares_Gerais/
+├── Angulares_Interpolados/
+├── Angulares_Interpolados_Passo/
+├── Espaco_Temporais/
+├── Mecanica/
+├── Eventos/
+├── Qualidade/
+└── Graficos/
+```
+
+### O que cada arquivo contém
+
+| Pasta / arquivo | Conteúdo |
+|---|---|
+| **`Resumo_Geral.xlsx`** (raiz) | Planilha **acumulativa** entre análises. Abas: `Resumo` (uma linha por trial), `Medias_SD` (média ± desvio-padrão por passo) e `Por_Passo` (tabela mestre: uma linha por passo com espaço-temporais + mecânica + angular). É o arquivo principal para comparar sujeitos/condições. |
+| **`Marcadores/`** | Coordenadas dos marcadores corporais quadro a quadro, em **pixels** (`_x_px`, `_y_px`), em **metros** (`_x_m`, `_y_m`) e a visibilidade (`_vis`) de cada ponto. |
+| **`Angulares_Gerais/`** | Ângulos articulares filtrados quadro a quadro (quadril, joelho, tornozelo, pé e tronco), aba `Dados_Filtrados`. |
+| **`Angulares_Interpolados/`** | Curvas angulares normalizadas em **0–100% do ciclo** da marcha, uma coluna por passada. |
+| **`Angulares_Interpolados_Passo/`** | Idem, mas normalizado por **passo** (contato → contato contralateral). |
+| **`Espaco_Temporais/`** | Parâmetros espaço-temporais. Abas: `Passos`, `Passadas`, `Medias_Passos`, `Medias_Passadas`, `Angular_Por_Passada`, `Angular_Por_Passo` (velocidade, cadência, comprimentos, tempos, ROM). |
+| **`Mecanica/`** | Trabalho mecânico do centro de massa. Abas: `Resumo` (Wext, Wv, Wf, Recovery, IRL, LRI, velocidade média), `Series_Temporais` (energias Ep/Ek/Emec, posição e velocidade do COM quadro a quadro), `Mecanica_Por_Passo` e `Series_Interp_Passo`. |
+| **`Eventos/`** | Eventos do ciclo por lado: contato inicial (`TD`) e retirada do pé (`TO`), em **frame** e em **tempo (s)**. |
+| **`Qualidade/`** | Relatório de qualidade da detecção. Abas: `Landmarks` (quão bem cada ponto foi detectado) e `Eventos`. Útil para checar a confiabilidade do trial. |
+| **`Graficos/`** | Dois PNGs por trial: `{nome}_Sinais_Mecanica.png` (energias/velocidade do COM) e `{nome}_Angulos_Bilaterais.png` (ângulos dos dois lados). São os mesmos gráficos exibidos na tela de Resultados. |
+
+> **Dados do participante e do app** (cadastro de sujeitos, configurações e o registro de
+> análises) ficam em `%LOCALAPPDATA%\AnaliseMarcha` — separados da pasta de saída dos
+> resultados.
+
+---
+
 ## Rodar a partir do código-fonte
 
 Requisitos: **Python 3.11** (Windows).
