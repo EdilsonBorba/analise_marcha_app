@@ -10,10 +10,3 @@ Use exatamente estes nomes de arquivo (PNG):
 | `03-cones.png` | Etapa **Calibração por cones** (quadro do vídeo com os cones marcados) |
 | `04-corte.png` | Etapa **Revisão e corte** (vídeo com o esqueleto sobreposto) |
 | `05-resultados.png` | Tela **Resultados** com métricas e gráfico |
-
-## ⚠️ Privacidade
-Estas imagens vão para um repositório **público**. Antes de capturar:
-- **Não mostre rosto** de participantes reais — desfoque/borre o rosto no quadro do vídeo, ou
-  use um vídeo de demonstração/voluntário que autorizou a divulgação.
-- **Não mostre nomes/dados reais** na lista ou no formulário — cadastre um participante fictício
-  (ex.: "Participante Demo") só para os screenshots.
