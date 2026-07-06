@@ -42,17 +42,12 @@ cd analise_marcha_app
 python -m venv .venv
 .venv\Scripts\activate
 
-# 3. Instalar as dependências do aplicativo (backend rtmlib, mais leve)
-pip install -r requirements-app.txt
+# 3. Instalar as dependências
+pip install -r requirements.txt
 
 # 4. Rodar o painel
 python app_marcha.py
 ```
-
-Para a instalação **completa** (inclui os backends legados de comparação — torch/mmpose/
-mediapipe), use `requirements.txt` no lugar do `requirements-app.txt`. Ela é bem mais pesada
-e só é necessária para os scripts experimentais
-`analise_marcha_grama_backend_compare*.py`.
 
 ### GPU (opcional, recomendado)
 Com uma GPU NVIDIA, o `gpu_bootstrap.py` baixa o runtime CUDA 12.9 + cuDNN 9 na primeira
@@ -64,7 +59,7 @@ execução e habilita o ONNX Runtime na GPU automaticamente. Sem GPU, o programa
 
 ```bash
 # Instalar as dependências de build
-pip install -r requirements-app.txt
+pip install -r requirements.txt
 
 # Opção A — pasta (onedir): dist/AnaliseMarcha/
 pyinstaller app_marcha.spec
