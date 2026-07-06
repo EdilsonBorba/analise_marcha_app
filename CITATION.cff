@@ -22,6 +22,4 @@ keywords:
   - estimativa de pose
   - RTMPose
   - trabalho mecânico
-# Após conectar o Zenodo e publicar o primeiro Release, preencha o DOI abaixo
-# (o "concept DOI" do Zenodo, que aponta sempre para a versão mais recente):
-# doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.21221755
