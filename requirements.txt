@@ -1,5 +1,4 @@
 # Dependências do aplicativo (backend rtmlib / ONNX Runtime).
-# NÃO inclui torch/mmpose/mmcv/mediapipe (backends legados, não usados no app).
 # O runtime CUDA (nvidia-*-cu12, ~1,7 GB) NÃO entra no pacote: é baixado do PyPI
 # na 1ª execução pelo gpu_bootstrap, só se a máquina tiver GPU NVIDIA.
 #
