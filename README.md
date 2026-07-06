@@ -1,6 +1,6 @@
 # Análise de Marcha
 
-[![DOI](https://zenodo.org/badge/1291077098.svg)](https://doi.org/10.5281/zenodo.21221755)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21221755.svg)](https://doi.org/10.5281/zenodo.21221755)
 
 Ferramenta de **análise de marcha por vídeo** (biomecânica). A partir de um vídeo do
 sujeito caminhando, o programa estima marcadores corporais, ângulos articulares, eventos
