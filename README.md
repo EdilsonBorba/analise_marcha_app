@@ -31,6 +31,49 @@ Se você só quer **usar** o programa, baixe a versão pronta na página de
 
 ---
 
+## Como usar
+
+O app é um painel com barra lateral: **Início · Participantes · Analisar · Resultados ·
+Config · Sobre**. O fluxo de uma análise é:
+
+### 1. Cadastrar o participante
+Na aba **Participantes**, clique em **Novo participante** e preencha os dados usados para
+escalar a análise: nome, estatura, **massa (kg)**, **comprimento do membro inferior (GT, cm)**
+e, opcionalmente, **coxa (cm)**. Clique em **Salvar**.
+
+![Cadastro de participante](docs/img/01-participantes.png)
+
+### 2. Configurar a análise
+Na aba **Analisar**, selecione o **participante** (massa e comprimentos são preenchidos
+automaticamente), escolha o **vídeo** da caminhada, a **pasta de saída** e, se quiser, recorte
+por tempo em **Início (s)** / **Fim (s)**. Clique em **Continuar → marcar cones**.
+
+![Tela de análise](docs/img/02-analisar.png)
+
+### 3. Calibrar a escala pelos cones
+Sobre o primeiro quadro do vídeo, marque a **BASE** de cada cone da esquerda para a direita
+(fase 1) e depois o **TOPO** de cada um, na mesma ordem (fase 2). Isso dá a escala real
+(metros/pixel). Se o vídeo não tiver cones, use **Pular** — a escala é estimada pelo
+comprimento da coxa.
+
+![Calibração por cones](docs/img/03-cones.png)
+
+### 4. Revisar e cortar a faixa
+O app mostra o vídeo com o esqueleto sobreposto. Ajuste os controles de **Início/Fim** para
+manter só o trecho em que a detecção está boa e clique em **Confirmar faixa e analisar**.
+
+![Revisão e corte](docs/img/04-corte.png)
+
+### 5. Ver os resultados
+Ao final, a tela **Resultados** mostra as métricas (velocidade, cadência, comprimento de
+passo/passada, trabalho mecânico, recuperação pendular, IRL) e os gráficos (mecânico e
+angular). As planilhas (`.xlsx`) e os gráficos (`.png`) são salvos na pasta de saída, dentro
+de `Resultados_RTMLib/`. Análises anteriores ficam acessíveis na aba **Resultados**.
+
+![Resultados](docs/img/05-resultados.png)
+
+---
+
 ## Rodar a partir do código-fonte
 
 Requisitos: **Python 3.11** (Windows).
