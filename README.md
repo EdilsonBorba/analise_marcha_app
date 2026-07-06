@@ -80,7 +80,7 @@ Requisitos: **Python 3.11** (Windows).
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/<seu-usuario>/analise_marcha_app.git
+git clone https://github.com/EdilsonBorba/analise_marcha_app.git
 cd analise_marcha_app
 
 # 2. Criar e ativar um ambiente virtual
