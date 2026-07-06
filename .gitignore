@@ -1,0 +1,40 @@
+# ===== Dados sensíveis / de pesquisa — NUNCA versionar =====
+Sujeitos/
+Videos/
+Output/
+Resultados_*/
+analises.json
+app_marcha_config.json
+*.mp4
+*.mov
+*.avi
+
+# ===== Artefatos de build =====
+build/
+dist/
+*.exe
+*.spec.bak
+
+# ===== Ambientes / caches Python =====
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ===== Runtime CUDA baixado em tempo de execução =====
+cuda_runtime/
+nvidia/
+
+# ===== Logs =====
+app.log
+*.log
+
+# ===== Sistema operacional / editor =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

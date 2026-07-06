@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Se você usar este software, por favor cite-o conforme abaixo."
+title: "Análise de Marcha — estimativa de parâmetros espaço-temporais e mecânicos da marcha por vídeo"
+abstract: >-
+  Ferramenta de análise de marcha por vídeo (biomecânica) que estima marcadores
+  corporais, ângulos articulares, eventos do ciclo da marcha, parâmetros
+  espaço-temporais e trabalho mecânico do centro de massa. Estimativa de pose 2D
+  via RTMPose (Halpe-26) com ONNX Runtime em GPU. Inclui um painel gráfico
+  (app_marcha) e o motor de análise reutilizável (analise_marcha).
+type: software
+authors:
+  - family-names: Borba
+    given-names: Edilson
+    email: borba.edi@gmail.com
+license: MIT
+version: 1.0.0
+date-released: "2026-07-06"
+keywords:
+  - biomecânica
+  - análise de marcha
+  - gait analysis
+  - estimativa de pose
+  - RTMPose
+  - trabalho mecânico
+# Após conectar o Zenodo e publicar o primeiro Release, preencha o DOI abaixo
+# (o "concept DOI" do Zenodo, que aponta sempre para a versão mais recente):
+# doi: 10.5281/zenodo.XXXXXXX
